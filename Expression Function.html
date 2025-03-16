@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Expression/Arrow Function</h1>
+
+    <script>
+      //Regular
+      function add(a, b) {
+        return a + b;
+      }
+
+      //Expression
+      var sub = function (a, b) {
+        return a - b;
+      };
+
+      //Arrow
+      var mult = (a, b) => a * b;
+
+      document.write(`Regular Function: ${add(8, 10)}<br><br>`);
+      document.write(`Expression Function: ${sub(8, 10)}<br><br>`);
+      document.write(`Arrow Function: ${mult(8, 10)}<br><br>`);
+    </script>
+  </body>
+</html>
